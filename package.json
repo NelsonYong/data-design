@@ -1,0 +1,32 @@
+{
+	"name": "data-design",
+	"private": false,
+	"version": "1.0.1",
+	"module": "dist/data-design.cjs.js",
+	"main": "dist/data-design.es.js",
+	"types": "dist/packages/index.d.ts",
+	"keywords": [
+		"data-design",
+		"typeScript"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build --mode production",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@types/lodash": "^4.14.182",
+		"lodash": "^4.17.21",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.1",
+		"@types/react": "^18.0.0",
+		"@types/react-dom": "^18.0.0",
+		"@vitejs/plugin-react": "^1.3.0",
+		"typescript": "^4.6.3",
+		"vite": "^2.9.9",
+		"vite-plugin-dts": "^1.2.1"
+	}
+}
