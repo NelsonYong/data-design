@@ -1,32 +1,55 @@
 {
-	"name": "data-design",
-	"private": false,
-	"version": "1.0.1",
-	"module": "dist/data-design.cjs.js",
-	"main": "dist/data-design.es.js",
-	"types": "dist/packages/index.d.ts",
-	"keywords": [
-		"data-design",
-		"typeScript"
-	],
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build --mode production",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@types/lodash": "^4.14.182",
-		"lodash": "^4.17.21",
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0"
-	},
-	"devDependencies": {
-		"@types/node": "^18.0.1",
-		"@types/react": "^18.0.0",
-		"@types/react-dom": "^18.0.0",
-		"@vitejs/plugin-react": "^1.3.0",
-		"typescript": "^4.6.3",
-		"vite": "^2.9.9",
-		"vite-plugin-dts": "^1.2.1"
-	}
+  "name": "data-design",
+  "private": false,
+  "version": "1.0.1",
+  "module": "dist/data-design.cjs.js",
+  "main": "dist/data-design.es.js",
+  "types": "dist/packages/index.d.ts",
+  "keywords": [
+    "data-design",
+    "typeScript"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --mode production",
+    "preview": "vite preview",
+    "amend": "amend",
+    "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
+    "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" postcss-html --cache --cache-location node_modules/.cache/stylelint/",
+    "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\""
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.182",
+    "amendjs": "^2.0.0",
+    "lodash": "^4.17.21",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/node": "^18.0.1",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.5.1",
+    "eslint-plugin-jest": "^26.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-scss": "^4.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9",
+    "vite-plugin-dts": "^1.2.1"
+  }
 }
