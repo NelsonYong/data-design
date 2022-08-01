@@ -1,4 +1,4 @@
-import './transforms/sort'
+import './transforms/array/sort'
 import './transforms/reverse'
 import './transforms/filter'
 import './transforms/map'
