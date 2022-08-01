@@ -14,7 +14,7 @@ export type DataType = keyof Omit<
 	'objectToString' | 'toTypeString'
 >
 
-export type TransformType = {
+export interface TransformType {
 	sort: SortOptions
 	reverse: null
 	filter: FilterOptions

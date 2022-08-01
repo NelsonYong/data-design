@@ -1,5 +1,10 @@
+import DataDesign from '../packages/data-design'
+
 function App() {
-  return <div></div>
+	// DataDesign().transform({
+	//   type:'filter'
+	// })
+	return <div></div>
 }
 
 export default App
