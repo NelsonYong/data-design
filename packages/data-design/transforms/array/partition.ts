@@ -1,6 +1,6 @@
 import { values, assign } from 'lodash'
-import { Transforms } from '.'
-import partition from './utils/partition'
+import { Transforms } from '..'
+import partition from '../utils/partition'
 
 export interface PartitionOptions {
 	groupBy: string[]

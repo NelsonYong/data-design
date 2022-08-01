@@ -1,4 +1,4 @@
-import { Transforms } from '.'
+import { Transforms } from '..'
 
 export interface MapOptions {
 	callback?(item: any, index: number, arr: any[]): any

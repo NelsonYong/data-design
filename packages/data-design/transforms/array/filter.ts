@@ -1,4 +1,4 @@
-import { Transforms } from '.'
+import { Transforms } from '..'
 
 function defaultCallback(row: any): boolean {
 	return !!row

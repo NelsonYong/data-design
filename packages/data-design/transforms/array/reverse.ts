@@ -1,4 +1,4 @@
-import { Transforms } from './index'
+import { Transforms } from '..'
 
 Transforms.registerTransform('reverse', (dataSource: any[]) => {
 	if (dataSource != undefined && dataSource !== null) {

@@ -1,4 +1,4 @@
-import { Transforms } from './index'
+import { Transforms } from '..'
 
 // sort array
 export interface SortOptions {

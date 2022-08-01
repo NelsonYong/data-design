@@ -2,7 +2,7 @@ import DataDesign from '../packages/data-design'
 
 function App() {
 	// DataDesign().transform({
-	//   type:'filter'
+	//   type:"flatTree"
 	// })
 	return <div></div>
 }

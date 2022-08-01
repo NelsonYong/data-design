@@ -1,4 +1,4 @@
-import { Transforms } from '.'
+import { Transforms } from '..'
 import { isPlainObject, forIn, isString } from 'lodash'
 
 export interface RenameOptions {

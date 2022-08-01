@@ -1,4 +1,4 @@
-import { Transforms } from '.'
+import { Transforms } from '..'
 import { sortBy, isArray } from 'lodash'
 
 const VALID_ORDERS = ['ASC', 'DESC']

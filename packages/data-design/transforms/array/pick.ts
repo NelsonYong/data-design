@@ -1,4 +1,4 @@
-import { Transforms } from '.'
+import { Transforms } from '..'
 import { pick } from 'lodash'
 export interface PickOptions {
 	fields?: string[]
