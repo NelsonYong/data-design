@@ -16,10 +16,8 @@
 		"amend": "amend",
 		"docs:dev": "vitepress dev docs",
 		"docs:build": "vitepress build docs",
-		"docs:serve": "vitepress serve docs"
-	},
-	"simple-git-hooks": {
-		"pre-commit": "npx lint-staged"
+		"docs:serve": "vitepress serve docs",
+		"prepare": "husky install"
 	},
 	"lint-staged": {
 		"*.{js,ts,tsx,vue,md}": [
@@ -39,7 +37,16 @@
 		"@types/md5": "^2.3.2",
 		"@types/node": "^18.0.6",
 		"@types/prettier": "^2.6.3",
+		"@types/react-dom": "^18.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.33.0",
+		"@typescript-eslint/parser": "^5.33.0",
+		"babel-eslint": "^10.1.0",
 		"eslint": "^8.20.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
 		"simple-git": "^3.10.0",
 		"simple-git-hooks": "^2.8.0",
 		"typescript": "^4.6.3",

@@ -1,5 +1,3 @@
-import dataDesign from './dataDesign'
+import { transform, dataType } from "./dataDesign";
 
-console.log(a)
-
-export default dataDesign
+export { transform, dataType };
