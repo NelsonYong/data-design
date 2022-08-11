@@ -13,7 +13,18 @@
 		"dev": "vite",
 		"build": "tsc && vite build --mode production",
 		"preview": "vite preview",
-		"amend": "amend"
+		"amend": "amend",
+		"docs:dev": "vitepress dev docs",
+		"docs:build": "vitepress build docs",
+		"docs:serve": "vitepress serve docs"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged"
+	},
+	"lint-staged": {
+		"*.{js,ts,tsx,vue,md}": [
+			"eslint --fix"
+		]
 	},
 	"dependencies": {
 		"@types/lodash": "^4.14.182",
@@ -24,8 +35,17 @@
 		"react-dom": "^18.0.0"
 	},
 	"devDependencies": {
+		"@antfu/eslint-config": "^0.25.2",
+		"@types/md5": "^2.3.2",
+		"@types/node": "^18.0.6",
+		"@types/prettier": "^2.6.3",
+		"eslint": "^8.20.0",
+		"simple-git": "^3.10.0",
+		"simple-git-hooks": "^2.8.0",
 		"typescript": "^4.6.3",
 		"vite": "^2.9.9",
-		"vite-plugin-dts": "^1.2.1"
+		"vite-plugin-dts": "^1.2.1",
+		"vitepress": "1.0.0-alpha.4",
+		"vue": "^3.2.37"
 	}
 }
