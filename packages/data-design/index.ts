@@ -1,5 +1,5 @@
 import dataDesign from './dataDesign'
 
-const a = 777
+console.log(a)
 
 export default dataDesign

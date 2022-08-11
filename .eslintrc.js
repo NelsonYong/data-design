@@ -27,6 +27,15 @@ module.exports = {
 				],
 			},
 		],
+		'no-unused-vars': [
+			2,
+			{
+				// 允许声明未使用变量
+				vars: 'local',
+				// 参数不检查
+				args: 'none',
+			},
+		],
 		'node/no-callback-literal': 'off',
 		'import/namespace': 'off',
 		'import/default': 'off',
