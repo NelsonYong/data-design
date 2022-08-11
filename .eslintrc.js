@@ -32,7 +32,15 @@ module.exports = {
 		'import/default': 'off',
 		'import/no-named-as-default': 'off',
 		'import/no-named-as-default-member': 'off',
+		parserOptions: {
+			ecmaVersion: 'latest',
+		},
+
+		env: {
+			es6: true,
+		},
 	},
+
 	overrides: [
 		{
 			files: [
