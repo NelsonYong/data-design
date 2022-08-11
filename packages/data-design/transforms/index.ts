@@ -1,5 +1,5 @@
 /**
- *  Transform（key 注册中心
+ *  Transform（key 注册中心--
  * */
 
 import { TransformType } from '../type'
