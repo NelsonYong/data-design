@@ -5,7 +5,6 @@
 	"module": "dist/data-design.cjs.js",
 	"main": "dist/data-design.es.js",
 	"types": "dist/packages/index.d.ts",
-	"type": "module",
 	"keywords": [
 		"data-design",
 		"typeScript"
