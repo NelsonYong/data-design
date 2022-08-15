@@ -1,13 +1,23 @@
-// import { DataType } from '../packages/data-design/dataType'
-// import { dataType } from '../packages/data-design'
+// import { DataType } from '@data-design/dataType'
+// import { dataType, transform } from '@data-design'
 function App() {
   // DataType.registerDataType('isA', (d) => d === 'a')
   // const a = dataType<'isA'>({
   // 	type: 'isA',
-  // 	target: 'a8',
+  // 	target: 'a',
   // })
+  // console.log(a)
 
-  return <div className="App"></div>;
+  // const b = transform({
+  // 	type: 'filter',
+  // 	data: [1, 2, 3],
+  // 	callback(item) {
+  // 		return item > 1
+  // 	},
+  // })
+  // console.log(b)
+
+  return <div className="App">123</div>;
 }
 
 export default App;

@@ -9,7 +9,22 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: /^~/, replacement: "" },
-      { find: "@/packages", replacement: "/packages" },
+      {
+        find: "@data-design",
+        replacement: resolve(__dirname, "packages/data-design"),
+      },
+      {
+        find: "@data-design/dataType",
+        replacement: resolve(__dirname, "packages/data-design/dataType"),
+      },
+      {
+        find: "@data-design/transforms",
+        replacement: resolve(__dirname, "packages/data-design/transforms"),
+      },
+      {
+        find: "@data-design/share",
+        replacement: resolve(__dirname, "packages/data-design/share"),
+      },
     ],
   },
   build: {
