@@ -9,7 +9,11 @@ import { PartitionOptions } from "./transforms/array/partition";
 import { ToTreeOptions } from "./transforms/tree/toTree";
 import { FlatTreeOptions } from "./transforms/tree/flatTree";
 
-export type DataType = keyof Omit<typeof types, "objectToString" | "toTypeString">;
+export type MergeUnionType<T, U> = T extends U ? U : T | U;
+export type DataType = keyof Omit<
+  typeof types,
+  "objectToString" | "toTypeString"
+>;
 
 export interface TransformType {
   sort: SortOptions;
@@ -24,3 +28,6 @@ export interface TransformType {
   toTree: ToTreeOptions;
   flatTree: FlatTreeOptions;
 }
+
+export type AddonDataType<D> = MergeUnionType<D, DataType>;
+export type AddonTransformType<T> = MergeUnionType<T, TransformType>;
