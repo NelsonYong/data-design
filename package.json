@@ -1,50 +1,50 @@
 {
-	"name": "datai",
-	"private": false,
-	"version": "1.0.1",
-	"module": "dist/data-design.cjs.js",
-	"main": "dist/data-design.es.js",
-	"types": "dist/packages/index.d.ts",
-	"keywords": [
-		"data-design",
-		"typeScript"
-	],
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
-		"preview": "vite preview",
-		"docs:dev": "vitepress dev docs",
-		"docs:build": "vitepress build docs",
-		"docs:serve": "vitepress serve docs"
-	},
-	"lint-staged": {
-		"*.{js,ts,tsx,vue,md}": [
-			"eslint --fix"
-		]
-	},
-	"dependencies": {
-		"lodash": "^4.17.21",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
-	},
-	"devDependencies": {
-		"@types/md5": "^2.3.2",
-		"@types/node": "^18.7.3",
-		"@types/prettier": "^2.6.3",
-		"@types/react": "^18.0.17",
-		"@types/react-dom": "^18.0.6",
-		"@typescript-eslint/eslint-plugin": "^5.33.0",
-		"@typescript-eslint/parser": "^5.33.0",
-		"@vitejs/plugin-react": "^2.0.1",
-		"eslint": "^8.20.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"husky": "^8.0.1",
-		"lint-staged": "^13.0.3",
-		"prettier": "^2.7.1",
-		"typescript": "^4.6.4",
-		"vite": "^3.0.7",
-		"vite-plugin-dts": "^1.4.1",
-		"vitepress": "1.0.0-alpha.4"
-	}
+  "name": "datai",
+  "private": false,
+  "version": "1.0.1",
+  "module": "dist/data-design.cjs.js",
+  "main": "dist/data-design.es.js",
+  "types": "dist/packages/index.d.ts",
+  "keywords": [
+    "data-design",
+    "typeScript"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "docs:dev": "dumi dev",
+    "docs:build": "dumi build",
+    "preview": "vite preview"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.3.2",
+    "@types/node": "^18.7.3",
+    "@types/prettier": "^2.6.3",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "@vitejs/plugin-react": "^2.0.1",
+    "dumi": "^2.0.18",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7",
+    "vite-plugin-dts": "^1.4.1",
+    "vitepress": "1.0.0-alpha.4"
+  }
 }

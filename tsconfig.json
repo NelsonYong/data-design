@@ -18,13 +18,13 @@
 		"baseUrl": ".",
 		"rootDir": "./",
 		"paths": {
-			"@/src": ["src/*"],
+			"@/src": ["example/*"],
 			"@data-design": ["./packages/data-design/index.ts"],
 			"@data-design/dataType": ["./packages/data-design/dataType/index.ts"],
 			"@data-design/transforms": ["./packages/data-design/transforms/index.ts"],
 			"@data-design/share": ["./packages/data-design/share/index.ts"]
 		}
 	},
-	"include": ["src", "packages"],
+	"include": ["example", "packages"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }
