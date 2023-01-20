@@ -1,7 +1,7 @@
 {
-  "name": "datai",
+  "name": "data-design",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "module": "dist/data-design.cjs.js",
   "main": "dist/data-design.es.js",
   "types": "dist/packages/index.d.ts",
@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "docs:dev": "dumi dev",
     "docs:build": "dumi build",
     "preview": "vite preview"
@@ -22,11 +22,12 @@
     ]
   },
   "dependencies": {
-    "lodash": "^4.17.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/lodash": "^4.14.191",
     "@types/md5": "^2.3.2",
     "@types/node": "^18.7.3",
     "@types/prettier": "^2.6.3",

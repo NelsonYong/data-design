@@ -1,30 +1,30 @@
 {
-	"compilerOptions": {
-		"target": "ESNext",
-		"useDefineForClassFields": true,
-		"lib": ["DOM", "DOM.Iterable", "ESNext"],
-		"allowJs": false,
-		"skipLibCheck": true,
-		"esModuleInterop": false,
-		"allowSyntheticDefaultImports": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"module": "ESNext",
-		"moduleResolution": "Node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"noEmit": true,
-		"jsx": "react-jsx",
-		"baseUrl": ".",
-		"rootDir": "./",
-		"paths": {
-			"@/src": ["example/*"],
-			"@data-design": ["./packages/data-design/index.ts"],
-			"@data-design/dataType": ["./packages/data-design/dataType/index.ts"],
-			"@data-design/transforms": ["./packages/data-design/transforms/index.ts"],
-			"@data-design/share": ["./packages/data-design/share/index.ts"]
-		}
-	},
-	"include": ["example", "packages"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "rootDir": "./",
+    "paths": {
+      "@/src": ["src/*"],
+      "@data-design": ["./packages/data-design/index.ts"],
+      "@data-design/dataType": ["./packages/data-design/dataType/index.ts"],
+      "@data-design/transforms": ["./packages/data-design/transforms/index.ts"],
+      "@data-design/share": ["./packages/data-design/share/index.ts"]
+    }
+  },
+  "include": ["packages"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

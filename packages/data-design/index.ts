@@ -1,3 +1,3 @@
-import { transform, dataType } from "./dataDesign";
+import { dataTransform, dataType } from './dataDesign'
 
-export { transform, dataType };
+export { dataTransform, dataType }

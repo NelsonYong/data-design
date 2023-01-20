@@ -9,12 +9,10 @@ export default defineConfig({
   history: {
     type: 'hash',
   },
-
-  // hash: true,
   resolve: {
     docDirs: ['docs'],
     atomDirs: [
-      { type: 'component', dir: '/packages/concis-react/src' },
+      { type: 'DataType', dir: '/packages/data-design/dataType' },
       { type: 'mobile', dir: '/packages/concis-react-mobile/src' },
     ],
     codeBlockMode: 'passive',
@@ -23,18 +21,17 @@ export default defineConfig({
     dataDesignVersion: version,
   },
   alias: {
-    concis: path.join(__dirname, 'packages/concis-react/src'),
+    dataDesign: path.join(__dirname, 'packages/data-design'),
   },
   locales: [
     { id: 'en-US', name: 'English', suffix: '' },
-    { id: 'zh-CN', name: '中文', suffix: 'zh-CN' },
+    { id: 'zh-CN', name: '中文', suffix: '/zh-CN' },
   ],
   themeConfig: {
     name: 'Data-Design',
     carrier: 'dumi', // 设备状态栏左侧的文本内容
     hd: true,
     rtl: true,
-    // logo: 'http://concis.org.cn/images/concis-logo.png',
     searchHotKey: {
       macos: '⌘+K',
       windows: 'ctrl+k',
@@ -42,16 +39,12 @@ export default defineConfig({
     footer: '',
     nav: [
       {
-        title: '指南',
+        title: 'Introduce',
         link: '/guide/introduce',
       },
       {
-        title: '组件',
-        link: '/components/button',
-      },
-      {
-        title: 'GitHub',
-        link: 'https://github.com/fengxinhhh/Concis',
+        title: 'DataType',
+        link: '/dataType',
       },
     ],
   },
