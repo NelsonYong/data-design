@@ -19,12 +19,12 @@
     "rootDir": "./",
     "paths": {
       "@/src": ["src/*"],
-      "@data-design": ["./packages/data-design/index.ts"],
-      "@data-design/dataType": ["./packages/data-design/dataType/index.ts"],
-      "@data-design/transforms": ["./packages/data-design/transforms/index.ts"],
-      "@data-design/share": ["./packages/data-design/share/index.ts"]
+      "data-design": ["./packages/data-design/index.ts"],
+      "data-design/dataType": ["./packages/data-design/dataType/index.ts"],
+      "data-design/transforms": ["./packages/data-design/transforms/index.ts"],
+      "data-design/share": ["./packages/data-design/share/index.ts"]
     }
   },
-  "include": ["packages"],
+  "include": ["packages", "docs/**/*.tsx", "docs/hooks/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

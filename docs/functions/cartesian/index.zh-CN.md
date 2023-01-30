@@ -1,0 +1,6 @@
+---
+nav:
+  title: Cartesian
+---
+
+# DataType
