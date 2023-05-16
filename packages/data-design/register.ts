@@ -10,7 +10,6 @@ import './transforms/array/sort-by'
 import './transforms/array/partition'
 import './transforms/tree/toTree'
 import './transforms/tree/flatTree'
-
 import './geo/isPtInPoly'
 
 for (const key in isFns) {
