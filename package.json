@@ -1,7 +1,7 @@
 {
   "name": "data-design",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "module": "dist/data-design.cjs.js",
   "main": "dist/data-design.es.js",
   "types": "dist/packages/index.d.ts",
