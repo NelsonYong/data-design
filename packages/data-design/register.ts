@@ -11,6 +11,7 @@ import './transforms/array/partition'
 import './transforms/tree/toTree'
 import './transforms/tree/flatTree'
 import './geo/isPtInPoly'
+import './cartesian/minDistancePoint'
 
 for (const key in isFns) {
   if (Object.prototype.hasOwnProperty.call(isFns, key)) {
