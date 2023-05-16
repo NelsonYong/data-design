@@ -1,3 +1,3 @@
-import { dataTransform, dataType } from './dataDesign'
+import { dataTransform, dataType, dataGeo, dataCartesian } from './dataDesign'
 
-export { dataTransform, dataType }
+export { dataTransform, dataType, dataGeo, dataCartesian }

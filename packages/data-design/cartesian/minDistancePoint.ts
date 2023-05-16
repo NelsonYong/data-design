@@ -1,3 +1,5 @@
+import { Cartesian } from ".";
+
 export type NearestPointType = {
   dyadicArray: ({ x: number; y: number } | [number, number])[]
   targetPoint: [number, number]
@@ -5,7 +7,7 @@ export type NearestPointType = {
   keep: number
 }
 
-export function nearestPoint({
+export function minDistancePoint({
   dyadicArray,
   targetPoint,
   step = 1000,
@@ -19,13 +21,13 @@ export function nearestPoint({
       dyadicArray?.filter((item) =>
         item instanceof Array
           ? item[0] <= targetX + keep &&
-            item[0] >= targetX - keep &&
-            item[1] <= targetY + keep &&
-            item[1] >= targetY - keep
+          item[0] >= targetX - keep &&
+          item[1] <= targetY + keep &&
+          item[1] >= targetY - keep
           : item.x <= targetX + keep &&
-            item.x >= targetX - keep &&
-            item.y <= targetY + keep &&
-            item.y >= targetY - keep,
+          item.x >= targetX - keep &&
+          item.y <= targetY + keep &&
+          item.y >= targetY - keep,
       ) ?? []
     if (point && point.length !== 0) {
       // 收集距离
@@ -40,7 +42,7 @@ export function nearestPoint({
       // 根据最小距离索引有效最小点集的点
       return point[minIndex]
     } else {
-      return nearestPoint({
+      return minDistancePoint({
         dyadicArray,
         targetPoint,
         step: step + 1000,
@@ -51,3 +53,14 @@ export function nearestPoint({
 
   return null
 }
+
+
+Cartesian.register(
+  'minDistancePoint',
+  (options: NearestPointType) => {
+    return minDistancePoint(options)
+  }
+)
+
+
+

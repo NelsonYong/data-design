@@ -25,7 +25,7 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/explicit-member-accessibility': [2, { accessibility: 'no-public' }],
     '@typescript-eslint/no-non-null-assertion': 0,
-    '@typescript-eslint/explicit-function-return-type': [1, { allowExpressions: true }],
+    // '@typescript-eslint/explicit-function-return-type': [1, { allowExpressions: true }],
     '@typescript-eslint/no-use-before-define': [2, { functions: false }],
     '@typescript-eslint/no-namespace': 0,
     '@typescript-eslint/ban-ts-ignore': 0,
@@ -33,6 +33,8 @@ module.exports = {
     '@typescript-eslint/camelcase': 0,
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-var-requires': 0,
+    // eslint-disable-next-line no-dupe-keys
+    '@typescript-eslint/explicit-function-return-type': 'off',
     'no-unused-vars': [
       2,
       {

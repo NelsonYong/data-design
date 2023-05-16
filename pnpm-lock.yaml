@@ -17,6 +17,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.1
   husky: ^8.0.1
+  js-utils-pro: ^0.0.7
   lint-staged: ^13.0.3
   lodash: ^4.17.21
   prettier: ^2.7.1
@@ -28,6 +29,7 @@ specifiers:
   vitepress: 1.0.0-alpha.4
 
 dependencies:
+  js-utils-pro: 0.0.7
   lodash: 4.17.21
 
 devDependencies:
@@ -6883,6 +6885,10 @@ packages:
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: true
+
+  /js-utils-pro/0.0.7:
+    resolution: {integrity: sha512-ImpxAxpvyrIn7+OB707He6Wr+7oLA9Bwx+eqLmv5gK73aIqDLzxNl5lVi+YvHIXPpu762HYoHYCLvRlEywXabA==}
+    dev: false
 
   /js-yaml/3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
