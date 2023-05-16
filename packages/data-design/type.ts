@@ -11,6 +11,7 @@ import { FlatTreeOptions } from './transforms/tree/flatTree'
 import { isPtInPolyOptions } from './geo/isPtInPoly'
 import './cartesian/minDistancePoint'
 import { NearestPointType } from './cartesian/minDistancePoint'
+import { isPointInCircleOptions } from './geo/isPointInCircle'
 
 export type MergeUnionType<T, U> = T extends U ? U : T | U
 export type DataType = keyof Omit<typeof isFns, 'objectToString' | 'toTypeString'>
@@ -35,6 +36,7 @@ export type CartesianType = {
 
 export type GeoType = {
   isPtInPoly: isPtInPolyOptions
+  isPointInCircle: isPointInCircleOptions
 }
 
 export type AddonDataType<D> = MergeUnionType<D, DataType>

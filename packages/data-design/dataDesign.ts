@@ -1,10 +1,10 @@
 import './register'
 import { Transforms } from './transforms'
-import { DataType as DataTypeIntance } from './dataType'
-
-import { AddonDataType, CartesianType, GeoType, TransformType } from './type'
 import { Geo } from './geo'
 import { Cartesian } from './cartesian'
+import { DataType as DataTypeIntance } from './dataType'
+import { AddonDataType, CartesianType, GeoType, TransformType } from './type'
+
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export const dataType = <D extends string>({
@@ -58,5 +58,7 @@ export const dataGeo = <K extends keyof GeoType = keyof GeoType>({
     [P in keyof GeoType[K]]: GeoType[K][P]
   }) => {
   const fn = Geo.get(type)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return fn(option)
 }

@@ -5,6 +5,7 @@
 import { GeoType } from "../type";
 
 type GeoFunction<K extends keyof GeoType> = (options: GeoType[K]) => void;
+
 export class Geo {
   /**
    * 已注册的 Transform（key-value 键值对）

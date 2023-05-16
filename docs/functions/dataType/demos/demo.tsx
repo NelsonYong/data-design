@@ -6,6 +6,7 @@ const Demo = () => {
   const target = 'test'
 
   const result = useMemo(() => dataType({ target, type: 'isArray' }), [])
+  // dataGeo({type:"isPointInCircle",})
 
   return (
     <div>
